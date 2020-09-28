@@ -10,6 +10,8 @@ $ gradle  bootRun
 
 or u can use compiled version
 
+
+
 $java -jar {projectpath}/build/libs/pivottable-0.0.1-SNAPSHOT.jar
 
 
