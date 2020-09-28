@@ -14,7 +14,7 @@ import java.util.Map;
 @RestController
 @RequestMapping("/")
 public class RestContr {
-    private final ArrayList<String> validParams = new ArrayList<>(Arrays.asList("a", "b", "c", "d", "y"));
+    private final ArrayList<String> VALID_PARAMS = new ArrayList<>(Arrays.asList("a", "b", "c", "d", "y"));
 
 
     @Autowired
@@ -27,7 +27,7 @@ public class RestContr {
     private List<Map<String, Object>> getResults(
             @RequestParam("row") String row,
             @RequestParam("col") String col) {
-        if (validParams.contains(row) && validParams.contains(col)) {
+        if (VALID_PARAMS.contains(row) && VALID_PARAMS.contains(col)) {
             return dataService.getAggregation(row, col);
         } else {
             return null;
