@@ -10,14 +10,19 @@ $ gradle  bootRun
 
 or u can use compiled version
 
-dowload zip using following link
-
-
-https://github.com/Kalashnikofffs/pivottable/blob/master/libs.zip?raw=true
-
-unpack to any dir and the $cd there
+$gradle build
 
 then 
+
+$ cd build/libs
+
+make sure that there is a data.sqlite file.
+
+if not 
+
+$gradle copyDatabase
+
+then execute .jar
 
 $ java -jar pivottable-0.0.1-SNAPSHOT.jar
 
