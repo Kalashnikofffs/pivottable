@@ -10,9 +10,16 @@ $ gradle  bootRun
 
 or u can use compiled version
 
+dowload zip using following link
 
 
-$java -jar {projectpath}/build/libs/pivottable-0.0.1-SNAPSHOT.jar
+https://github.com/Kalashnikofffs/pivottable/blob/master/libs.zip?raw=true
+
+unpack to any dir and the $cd there
+
+then 
+
+$ java -jar pivottable-0.0.1-SNAPSHOT.jar
 
 
 then you can make a rest request to url:  http://localhost:8080/?row=a&col=y
